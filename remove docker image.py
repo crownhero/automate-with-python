@@ -4,7 +4,7 @@ import docker
 client = docker.from_env()
 
 # Define a list of image names or IDs that you want to exclude from deletion
-excluded_images = ["258da150107a","20a3732f422b"]
+excluded_images = ["259da150107a","20a3731f422b"]
 
 # Get a list of all Docker images
 all_images = client.images.list()
