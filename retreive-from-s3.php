@@ -8,6 +8,11 @@ use Aws\S3\S3Client;
 $bucket = 'your-s3-bucket-name';
 $prefix = 'space/accounts/'; // The folder path within your S3 bucket where result.html is located
 
+// AWS credentials
+$awsAccessKeyId = 'YOUR_ACCESS_KEY_ID';
+$awsSecretKey = 'YOUR_SECRET_ACCESS_KEY';
+$region = 'your-aws-region';
+
 // Instantiate the S3 client
 $s3 = new S3Client([
     'version' => 'latest',
