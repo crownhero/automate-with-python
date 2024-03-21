@@ -2,7 +2,7 @@ import boto3
 
 # Specify your AWS region and S3 bucket name
 bucket_name = 'your-s3-bucket-name'
-prefix = 'space/accounts/'  # The folder path within your S3 bucket where result.html is located
+prefix = 'yummy/settings/'  # The folder path within your S3 bucket where result.html is located
 file_name = 'result.html'
 
 # Create an S3 client
