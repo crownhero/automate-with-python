@@ -16,7 +16,11 @@ $region = 'your-aws-region';
 // Instantiate the S3 client
 $s3 = new S3Client([
     'version' => 'latest',
-    'region'  => 'your-aws-region',
+    'region'  => $region,
+    'credentials' => [
+        'key' => $awsAccessKeyId,
+        'secret' => $awsSecretKey,
+    ],
 ]);
 
 try {
